@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>KT 1</title>
+</head>
+
+<body>
+    <div id="header" class="container-main">
+        <div onclick="scrollToTop()" id="to-top-button">&#11165;</div>
+        <div id="nav-background">
+            <div id="nav-container">
+                <a href="#" id="nav-logo">DevFolio</a>
+                <div id="section-container">
+                    <a href="#hero">
+                        <div class="nav-style" id="hover-underline-animation">Home</div>
+                    </a>
+                    <a href="#about">
+                        <div class="nav-style" id="hover-underline-animation">About</div>
+                    </a>
+                    <a href="#services">
+                        <div class="nav-style" id="hover-underline-animation">Services</div>
+                    </a>
+                    <a href="#work">
+                        <div class="nav-style" id="hover-underline-animation">Work</div>
+                    </a>
+                    <a href="#blog">
+                        <div class="nav-style" id="hover-underline-animation">Blog</div>
+                    </a>
+                    <div class="dropdown show">
+                        <div id="hover-underline-animation" data-toggle="dropdown">Drop down
+                            <img style="width: 12px" src="./imgs/chevron-down.svg" />
+                        </div>
+                        <div id="dropdownMenuLink" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-item">Drop Down 1</div>
+                            <div class="dropdown-item">Drop Down 2</div>
+                            <div class="dropdown-item">Drop Down 3</div>
+                            <div class="dropdown-item">Drop Down 4</div>
+                            <div class="dropdown-item">Drop Down 5</div>
+                        </div>
+                    </div>
+                    <a href="#contact">
+                        <div class="nav-style" id="hover-underline-animation">Contact</div>
+                    </a>
+                </div>
+                <div id="burger-icon"><img src="./imgs/list.svg"></div>
+            </div>
+        </div>
+        <div id="hero"></div>
+        <div class="greeting-container">
+            <div id="greeting-title">I am Morgan Freeman</div>
+            <div class="animation-text"></div>
+        </div>
+        <!--The second way of text animation-->
+        <!--<div id="text-to-change"></div>-->
+
+
+
+
+
+        <!--About-->
+        <div id="about"></div>
+        <div class="card-container">
+            <div id="item">
+                <div><img src="./imgs/man.jpg"></div>
+                <div>
+                    <li>
+                        <p><b style="color: black">Name: </b>Morgan Freeman</p>
+                    </li>
+                    <li>
+                        <p><b style="color: black">Profile: </b>full stack developer</p>
+                    </li>
+                    <li>
+                        <p><b style="color: black">Email: </b>contact@example.com</p>
+                    </li>
+                    <li>
+                        <p><b style="color: black">Phone: </b>(617) 557-0089</p>
+                    </li>
+                </div>
+            </div>
+            <div id="item">
+                <div id="card-title"><b>About me</b></div>
+                <div id="card-blue-line"></div>
+                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                    imperdiet et,
+                    porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                    porttitor accumsan tincidunt.</p>
+                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                    porttitor volutpat.
+                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+                <p>Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Nulla porttitor
+                    accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+            </div>
+            <div id="item">
+                <div><b style="font-family: Lato, sans-serif; font-size: 20px">Skill</b></div>
+                <li>
+                    <div id="progress-bar-title">HTML 85%</div>
+                    <div id="progress-bar">
+                        <div id="dark-blue" style="width: 85%"></div>
+                        <div id="light-blue" style="width: 15%"></div>
+                    </div>
+                </li>
+                <li>
+                    <div id="progress-bar-title">CSS3 75%</div>
+                    <div id="progress-bar">
+                        <div id="dark-blue" style="width: 75%"></div>
+                        <div id="light-blue" style="width: 25%"></div>
+                    </div>
+                </li>
+                <li>
+                    <div id="progress-bar-title">PHP 50%</div>
+                    <div id="progress-bar">
+                        <div id="dark-blue" style="width: 50%"></div>
+                        <div id="light-blue" style="width: 50%"></div>
+                    </div>
+                </li>
+                <li>
+                    <div id="progress-bar-title">JAVASCRIPT 90%</div>
+                    <div id="progress-bar">
+                        <div id="dark-blue" style="width: 90%"></div>
+                        <div id="light-blue" style="width: 10%"></div>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Services-->
+        <div class="title-container">
+            <div id="services"></div>
+            <div id="title">Services</div>
+            <div style="font-family: Lato, sans-serif; margin-bottom: 10px; color: rgb(84, 84, 84)">Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit.</div>
+            <div style="width: 50px; height: 4px; background-color: #0078FF; margin-top: 10px"></div>
+        </div>
+        <div class="container-cards">
+            <div>
+                <div class="card-circle">
+                    <img src="./imgs/icon1services.svg">
+                </div>
+                <h2 id="cards-title">Web Design</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non
+                    provident.</div>
+            </div>
+            <div>
+                <div class="card-circle">
+                    <img src="./imgs/icon2services.svg">
+                </div>
+                <h2 id="cards-title">Web Development</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non
+                    provident.</div>
+            </div>
+            <div>
+                <div class="card-circle">
+                    <img src="./imgs/icon3services.svg">
+                </div>
+                <h2 id="cards-title">Photography</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non
+                    provident.</div>
+            </div>
+            <div>
+                <div class="card-circle">
+                    <img src="./imgs/icon4services.svg">
+                </div>
+                <h2 id="cards-title">Responsive design</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non
+                    provident.</div>
+            </div>
+            <div>
+                <div class="card-circle">
+                    <img src="./imgs/icon5services.svg">
+                </div>
+                <h2 id="cards-title">Graphic Design</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non
+                    provident.</div>
+            </div>
+            <div>
+                <div class="card-circle">
+                    <img src="./imgs/icon6services.svg">
+                </div>
+                <h2 id="cards-title">Marketing Services</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non
+                    provident.</div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div id="blue-background"></div>
+            <div class="info-elems">
+                <div>
+                    <div id="info-circle"><img style="filter:invert(1); width: 50px;" src="./imgs/check.svg"></div>
+                    <p id="number" countTo="450"></p>
+                    <p id="circle-text">works completed</p>
+                </div>
+                <div>
+                    <div id="info-circle"><img style="filter:invert(1); width: 40px;" src="./imgs/journal-richtext.svg">
+                    </div>
+                    <p id="number" countTo="25"></p>
+                    <p id="circle-text">years of experience</p>
+                </div>
+                <div>
+                    <div id="info-circle"><img style="filter:invert(1); width: 40px;" src="./imgs/people.svg"></div>
+                    <p id="number" countTo="550"></p>
+                    <p id="circle-text">total clients</p>
+                </div>
+                <div>
+                    <div id="info-circle"><img style="filter:invert(1); width: 40px;" src="./imgs/award.svg"></div>
+                    <p id="number" countTo="48"></p>
+                    <p id="circle-text">awards won</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Portfolio-->
+        <div id="work"></div>
+        <div class="title-container">
+            <div id="title">Portfolio</div>
+            <div style="font-family: Lato, sans-serif; margin-bottom: 10px; color: rgb(84, 84, 84)">Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit.</div>
+            <div style="width: 50px; height: 4px; background-color: #0078FF; margin-top: 10px"></div>
+        </div>
+        <div class="photo-cards-container">
+            <div id="photo-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/work-1.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <h3 style="margin-top: 0;">Lorem impsum dolor</h3>
+                        <div style="font-size: 12px;">
+                            <span style="color: #0078FF; margin-right: 5px;">Web Design </span><span
+                                style="color: rgb(84, 84, 84);">/ 18 Sep. 2018</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img id="plus-circle" src="./imgs/plus-circle.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="photo-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/work-2.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <h3 style="margin-top: 0;">Loreda Cuno Nere</h3>
+                        <div style="font-size: 12px;">
+                            <span style="color: #0078FF; margin-right: 5px;">Web Design </span><span
+                                style="color: rgb(84, 84, 84);">/ 18 Sep. 2018</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img id="plus-circle" src="./imgs/plus-circle.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="photo-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/work-3.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <h3 style="margin-top: 0;">Mavrito Lana Dere</h3>
+                        <div style="font-size: 12px;">
+                            <span style="color: #0078FF; margin-right: 5px;">Web Design </span><span
+                                style="color: rgb(84, 84, 84);">/ 18 Sep. 2018</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img id="plus-circle" src="./imgs/plus-circle.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="photo-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/work-4.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <h3 style="margin-top: 0;">Bindo Laro Cado</h3>
+                        <div style="font-size: 12px;">
+                            <span style="color: #0078FF; margin-right: 5px;">Web Design </span><span
+                                style="color: rgb(84, 84, 84);">/ 18 Sep. 2018</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img id="plus-circle" src="./imgs/plus-circle.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="photo-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/work-5.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <h3 style="margin-top: 0;">Studio Lena Mado</h3>
+                        <div style="font-size: 12px;">
+                            <span style="color: #0078FF; margin-right: 5px;">Web Design </span><span
+                                style="color: rgb(84, 84, 84);">/ 18 Sep. 2018</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img id="plus-circle" src="./imgs/plus-circle.svg">
+                    </div>
+                </div>
+            </div>
+            <div id="photo-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/work-6.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <h3 style="margin-top: 0;">Studio Big Bang</h3>
+                        <div style="font-size: 12px;">
+                            <span style="color: #0078FF; margin-right: 5px;">Web Design </span><span
+                                style="color: rgb(84, 84, 84);">/ 18 Sep. 2018</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img id="plus-circle" src="./imgs/plus-circle.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Slider Xavi Alonso and Marta Socrate-->
+        <div class="slider">
+            <div id="blue-background"></div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="z-index: 15;">
+                <ol class="carousel-indicators">
+                    <li id="carousel-indicator" data-target="#carouselExampleIndicators" data-slide-to="0"
+                        class="active"></li>
+                    <li id="carousel-indicator" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" style="z-index: 10;">
+                    <div class="carousel-item active">
+                        <div><img style="border-radius: 100%;" src="./imgs/man.jpg"></div>
+                        <div class="carousel-caption d-none d-md-block" style="position: static;">
+                            <div id="person-name">Xavi alonso</div>
+                            <div id="person-desc">Curabitur arcu erat, accumsan id imperdiet et,
+                                porttitor at sem. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div><img style="border-radius: 100%;" src="./imgs/woman.jpg"></div>
+
+                        <div class="carousel-caption d-none d-md-block" style="position: static;">
+                            <div id="person-name">Marta socrate</div>
+                            <div id="person-desc">Curabitur arcu erat, accumsan id imperdiet et,
+                                porttitor at sem. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Blog-->
+        <div id="blog"></div>
+        <div id="title">BLOG</div>
+        <div class="title-container">
+
+            <div style="font-family: Lato, sans-serif; margin-bottom: 10px; color: rgb(84, 84, 84)">Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit.</div>
+            <div style="width: 50px; height: 4px; background-color: #0078FF; margin-top: 10px"></div>
+        </div>
+        <div class="blog-container">
+            <div id="blog-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/post-1.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <div id="blue-tag">Travel</div>
+                        <h2 style="margin-top: 0;">See more ideas about Travel</h2>
+                        <div id="photo-text">
+                            Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.
+                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                        </div>
+                    </div>
+                </div>
+                <div id="blog-data">
+                    <div>
+                        <div><img id="man-icon" src="./imgs/man.jpg"></div>
+                        <div>Morgan Freeman</div>
+                    </div>
+                    <div>
+                        <div><img src="./imgs/clock.svg"></div>
+                        <div>10 min</div>
+                    </div>
+                </div>
+            </div>
+            <div id="blog-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/post-2.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <div id="blue-tag">Web design</div>
+                        <h2 style="margin-top: 0;">See more ideas about Travel</h2>
+                        <div id="photo-text">
+                            Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.
+                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                        </div>
+                    </div>
+                </div>
+                <div id="blog-data">
+                    <div>
+                        <div><img id="man-icon" src="./imgs/man.jpg"></div>
+                        <div>Morgan Freeman</div>
+                    </div>
+                    <div>
+                        <div><img src="./imgs/clock.svg"></div>
+                        <div>10 min</div>
+                    </div>
+                </div>
+            </div>
+            <div id="blog-item">
+                <div id="photocard-container"><img id="photocard" src="./imgs/post-3.jpg"></div>
+                <div class="photocard-desc">
+                    <div>
+                        <div id="blue-tag">Web design</div>
+                        <h2 style="margin-top: 0;">See more ideas about Travel</h2>
+                        <div id="photo-text">
+                            Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.
+                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                        </div>
+                    </div>
+                </div>
+                <div id="blog-data">
+                    <div>
+                        <div><img id="man-icon" src="./imgs/man.jpg"></div>
+                        <div>Morgan Freeman</div>
+                    </div>
+                    <div>
+                        <div><img src="./imgs/clock.svg"></div>
+                        <div>10 min</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Contact-->
+        <div id="contact"></div>
+        <div class="contact-container">
+            <div id="blue-background"></div>
+            <div class="contacts">
+                <div id="contact-item">
+                    <div id="contact-title">Send Message Us</div>
+                    <div id="blue-line"></div>
+                    <div class="form-container">
+                        <form action="" method="get">
+                            <input id="field" type="text" name="name" placeholder="Your Name" required>
+                            <input id="field" type="text" name="email" placeholder="Your Email" required>
+                            <input id="field" type="text" name="subject" placeholder="Subject" required>
+                            <textarea id="field-msg" type="text" name="message" placeholder="Message"
+                                required></textarea>
+                            <input id="submit-button" type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+                <div id="contact-item">
+                    <div id="contact-title">Get in Touch</div>
+                    <div id="blue-line"></div>
+                    <div id="contact-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                        expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione
+                        nobis mollitia inventore?
+                    </div>
+                    <div id="contact-info">
+                        <div>
+                            <div><img id="contact-icon" src="./imgs/geo-alt.svg"></div>
+                            <div>329 WASHINGTON ST BOSTON, MA 02108</div>
+                        </div>
+                        <div>
+                            <div><img id="contact-icon" src="./imgs/phone.svg"></div>
+                            <div>(617) 557-0089</div>
+                        </div>
+                        <div>
+                            <div><img id="contact-icon" src="./imgs/envelope.svg"></div>
+                            <div>contact@example.com</div>
+                        </div>
+                    </div>
+                    <div class="socialmedia">
+                        <div id="contact-circle"><img src="./imgs/facebook.svg"></div>
+                        <div id="contact-circle"><img src="./imgs/instagram.svg"></div>
+                        <div id="contact-circle"><img src="./imgs/twitter.svg"></div>
+                        <div id="contact-circle"><img src="./imgs/linkedin.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Footer-->
+        <div class="footer">
+            <div>© Copyright <b>DevFolio</b>. All Rights Reserved<br>Designed by BootstrapMade</div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--What's left-->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
